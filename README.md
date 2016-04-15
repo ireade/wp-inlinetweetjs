@@ -50,7 +50,10 @@ You can add more data attributes to cutomise the tweeted output -
 - `wrapper` - The element that wraps the tweet
 
 ```html
-[inlinetweet via="creativecatapps" tags="webdesign,webdev,js,yolo" url="https://www.creativecatapps.co.uk/"]
+[inlinetweet via="creativecatapps" 
+	     tags="webdesign,webdev,js,yolo" 
+	     url="https://www.creativecatapps.co.uk/"
+	     wrapper="p"]
 	Lorem Khaled Ipsum is a major key to success 
 [/inlinetweet]
 ```
