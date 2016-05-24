@@ -145,7 +145,7 @@ if (!function_exists("inline_tweet_link")) {
 			$setUrl = ' data-inline-tweet-url="'. $url .'"';
 		}
 
-		return '<'.$wrapper.' data-inline-tweet'.$setVia.$setTags.'>'.$content.'</'.$wrapper.'>';
+		return '<'.$wrapper.' data-inline-tweet'.$setVia.$setTags.$setUrl.'>'.$content.'</'.$wrapper.'>';
 	}	
 }
 ?>
