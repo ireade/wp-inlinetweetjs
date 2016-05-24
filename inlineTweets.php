@@ -3,7 +3,7 @@
 Plugin Name: InlineTweets
 Description: InlineTweets allows you to easily create tweetable links out of any text on a webpage.
 Plugin URI: http://ireade.github.io/inlinetweetjs/
-Version: 1.0
+Version: 1.0.1
 Author: Ire Aderinokun & Emma Kalson
 Author URI: http://ireade.github.io/inlinetweetjs/
 License: GPL v3 or later
@@ -68,7 +68,7 @@ if( !function_exists("inline_tweets_page") ) {
 			<li>wrapper</li>
 		</ul>
 	</p>
-	<p>For example, <strong>[inlinetweet wrapper="p" via="creativecatapps"]Click here to tweet this![/inlinetweet]</strong></p>
+	<p>For example, <strong>[inlinetweet wrapper="p" via="creativecatapps"]Click here to tweet this![/inlinetweet]</strong></p>
 	</div>
 	<?php
 	}
