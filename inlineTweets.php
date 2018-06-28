@@ -92,8 +92,8 @@ if (!function_exists("inline_tweet_link")) {
 		
 		global $wp;
 		//$current_url = home_url(add_query_arg(array(),$wp->request));
-		$current_url = set_url_scheme( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
-		
+		//$current_url = set_url_scheme( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
+		  $current_url = wp_get_shortlink();
 		// check for local setting first
 		if (isset($atts['via'])) {
 			$via = $atts['via'];
@@ -145,7 +145,7 @@ if (!function_exists("inline_tweet_link")) {
 			$setUrl = ' data-inline-tweet-url="'. $url .'"';
 		}
 
-		return '<'.$wrapper.' data-inline-tweet'.$setVia.$setTags.'>'.$content.'</'.$wrapper.'>';
+		return '<'.$wrapper.' data-inline-tweet'.$setVia.$setTags.$setUrl.'>'.$content.'</'.$wrapper.'>';
 	}	
 }
 ?>
