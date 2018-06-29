@@ -65,6 +65,7 @@ if( !function_exists("inline_tweets_page") ) {
 			<li>via</li>
 			<li>tags</li>
 			<li>url</li>
+			<li>style (<i>this takes in the normal css inline style</i>)</li>
 			<li>wrapper</li>
 		</ul>
 	</p>
@@ -84,7 +85,8 @@ if (!function_exists("inline_tweet_link")) {
 			"via" => "",
 			"tags" => "",
 			"url" => "",
-			"wrapper" => ""
+			"wrapper" => "",
+			"style" => ""
 		), $atts));
 		
 		wp_enqueue_style( 'inlineTweets', plugins_url('assets/inline-tweet.min.css',__FILE__ ));
@@ -144,8 +146,12 @@ if (!function_exists("inline_tweet_link")) {
 		if ( $url != "") {
 			$setUrl = ' data-inline-tweet-url="'. $url .'"';
 		}
+		//for the styling
+		$styling = '';
+		if(!empty($atts['style']))
+			$styling = ' data-inline-tweet-style="'.$atts['style'].'"';
 
-		return '<'.$wrapper.' data-inline-tweet'.$setVia.$setTags.$setUrl.'>'.$content.'</'.$wrapper.'>';
+		return '<'.$wrapper.' data-inline-tweet'.$setVia.$setTags.$setUrl.$styling.'>'.$content.'</'.$wrapper.'>';
 	}	
 }
 ?>
