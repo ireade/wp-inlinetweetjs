@@ -14,7 +14,7 @@ A wordpress plugin for [InlineTweet.js](https://github.com/ireade/inlinetweetjs)
 #### 1 - Upload & Activate Plugin
 
 
-[Dowmload this repository](https://github.com/ireade/wp-inlinetweetjs/archive/master.zip) and upload it to your wordpress site. Make sure to activate the plugin as well.
+[Download this repository](https://github.com/ireade/wp-inlinetweetjs/archive/master.zip) and upload it to your wordpress site. Make sure to activate the plugin as well.
 
 
 
